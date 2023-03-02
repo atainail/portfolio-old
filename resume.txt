@@ -2,13 +2,13 @@
 
 Here is a short list of small, independent projects that I have completed.
 
-<p><a href="https://atainail.github.io/sample_website_1/">Sample Website</a>
+<p><a href="https://atainail.github.io/sample_website_1/" target="_blank">Sample Website</a>
 
-<p><a href="https://atainail.github.io/price_table/">Sample Pricing Table</a>
+<p><a href="https://atainail.github.io/price_table/" target="_blank">Sample Pricing Table</a>
 
-<p><a href="https://atainail.github.io/bootstrapNavbar/">Forms/Navbar example</a>
+<p><a href="https://atainail.github.io/bootstrapNavbar/" target="_blank">Forms/Navbar example</a>
 
-<p><a href="https://atainail.github.io/asrasAdventure/">Small game using only Javascript, HTML, CSS</a>
+<p><a href="https://atainail.github.io/asrasAdventure/" target="_blank">Small game using only Javascript, HTML, CSS</a>
 
 
 
