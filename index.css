@@ -1,0 +1,415 @@
+html,
+body {
+  height: 100%;
+  
+  cursor: pointer;
+
+
+}
+
+body::-webkit-scrollbar {
+  display: none;
+}
+
+body {
+  color: #235b58;
+  /* color: #1F2833; */
+  font-family: 'Dekko';
+  background-image: linear-gradient(to bottom right, #66FCF1 , #45A29E);
+  /* background-image: linear-gradient(to bottom right, rgb(227, 233, 255), #d7e5ff); */
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+  
+}
+
+.content {
+  border: 10px outset #48ada6;
+  border-radius: .1em; 
+  transition: .5s;
+  height: 100%;
+  overflow: hidden;
+}
+
+.content:hover {
+  border: 10px outset #88dcd6;
+}
+
+.contentText {
+  font-size: 1.1em;
+  padding: 1.1em 8em 0 0 ;
+  text-indent: 1.1em;
+  height: 38%;
+  overflow-y: scroll;
+  
+    box-sizing: content-box; 
+   
+}
+
+.contentText a{
+
+  text-decoration: none;
+  
+}
+
+.contentText a:hover{
+  letter-spacing: .2em;
+  padding-top: 1.5em;
+  transform: translateY(-.25em);
+  
+}
+
+
+
+
+.title {
+  letter-spacing: .2em;
+  transition: .3s;
+  font-family: 'Trajan';
+  font-size: 2.5em;
+  font-weight: 900;
+  padding: .6em 0 .4em 0;
+  text-transform: uppercase;
+   
+}
+
+
+
+.go-dark {
+  color: #66FCF1;
+  /* color: white; */
+  transition: .3s all;
+  background-image: linear-gradient(to bottom right, #2f4258 20em, #0B0C10);
+}
+
+.go-dark .contentText{
+  color: #C5C6C7;
+}
+
+.go-dark a {
+  color: #66FCF1 !important;
+}
+
+.go-dark a:link {
+  color: #66FCF1;
+}
+
+/* visited link */
+.go-dark a:visited {
+  color: #66FCF1;
+  text-decoration: none;
+}
+
+/* selected link */
+.go-dark a:active {
+  color: #66FCF1;
+}
+
+
+.go-dark::after {
+  color: #66FCF1;
+  transition: .3s all;
+}
+
+
+.moon {
+  width: 1.2em;
+  height: 1.2em;
+  transition: 1s;
+  transition: .3s all;
+}
+
+.moon:hover {
+  transform: rotate(-10deg);
+}
+
+.moon:hover svg {
+  /* fill: blue; */
+}
+
+
+.fill-height {
+  min-height: 100%;
+  max-height: 100%;
+}
+
+.fill-width {
+  min-width: 90%;
+  max-width: 90%;
+}
+
+.center {
+  margin-left: auto;
+  margin-right: auto;
+  align-items: center;
+  text-align: center;
+}
+
+.container img {
+  border-radius: 50%;
+  width: 12em;
+  height: 12em;
+  display: block;
+
+}
+
+
+
+/* Code adapted from https://alvarotrigo.com/blog/css-text-animations/ #10 by Brian Tracy */
+.letters {
+  transform: scale(0.5);
+  animation: scale 1.5s forwards cubic-bezier(0.5, 1, 0.89, 1);
+}
+
+@keyframes scale {
+  100% {
+    transform: scale(1);
+  }
+}
+
+span, .content {
+  opacity: 0;
+  filter: blur(4px);
+}
+
+span:nth-child(1), .content {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(1) {
+  animation: fade-in 0.8s 0.1s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(2) {
+  animation: fade-in 0.8s 0.2s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(3) {
+  animation: fade-in 0.8s 0.3s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(4) {
+  animation: fade-in 0.8s 0.4s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(5) {
+  animation: fade-in 0.8s 0.5s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(6) {
+  animation: fade-in 0.8s 0.6s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(7) {
+  animation: fade-in 0.8s 0.7s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+span:nth-child(8) {
+  animation: fade-in 0.8s 0.8s forwards cubic-bezier(0.11, 0, 0.5, 0);
+}
+
+@keyframes fade-in {
+  100% {
+    opacity: 1;
+    filter: blur(0);
+  }
+}
+
+/* Adapted code end */
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+.navigation {
+  font-size: 1.5em;
+  
+  
+}
+
+.navigation a {
+  transition: all .3s ease-in-out !important;
+  color: #1F2833;
+}
+
+/* unvisited link */
+.navigation a:link {
+  color: #1F2833;
+}
+
+/* visited link */
+.navigation a:visited {
+  color: #1F2833;
+  text-decoration: none;
+}
+
+/* mouse over link */
+.navigation a:hover {
+  letter-spacing: .15em;
+  text-decoration: none;
+  /* text-shadow: 0 0.04em .25em pink; */
+  transform: translateY(-.25em);
+
+}
+
+/* selected link */
+.navigation a:active {
+  color: #1F2833;
+}
+
+footer {
+  padding: 0 0 .7em 0;
+
+}
+
+footer svg {
+  width: 1.1em;
+  height: 1.1em;
+  color: #235b58;
+  transition: all .3s ease-in-out;
+}
+
+.go-dark svg {
+  color:#66FCF1;
+}
+
+
+/* mouse over link */
+footer svg:hover {
+  text-decoration: none;
+  transform: translateY(-.25em);
+  color: #66FCF1;
+  filter: drop-shadow(2px 4px 2px rgb(0 0 0 / 0.4));
+  transition: all .3s ease-in-out;
+}
+
+.go-dark svg:hover {
+  text-decoration: none;
+  transform: translateY(-.25em);
+  color: #66FCF1;
+  filter: drop-shadow(2px 4px 2px rgba(255, 255, 255));
+  transition: all .3s ease-in-out;
+}
+
+
+
+
+
+
+/* Start code adapted from https://www.30secondsofcode.org/css/s/hover-underline-animation edited by Atai Nail*/
+.hover-underline-animation {
+  display: inline-block;
+  position: relative;
+
+}
+
+.hover-underline-animation::after {
+  content: '';
+  position: absolute;
+  width: 70%;
+  transform: scaleX(0);
+  height: .2em;
+  top: 1.05em;
+  bottom: 0;
+  left: 25%;
+  opacity: 70%;
+  background-color: #89eff3;
+  /* background-image: linear-gradient(to bottom right, #6d8bc5, white); */
+  transform-origin: bottom right;
+  transition: transform 0.25s ease-out;
+}
+
+.hover-underline-animation:hover::after {
+  transform: scaleX(1);
+  transform-origin: bottom left;
+}
+
+/* End Code */
+
+
+
+
+
+
+
+/* Medium Screens */
+@media (min-width: 768px) {
+ 
+
+  .content img {
+    width: 8em;
+    height: 8em;
+  }
+
+  
+
+  .moon {
+    transform: scale(1.5);
+    padding: 0 .7em 0 0;
+  }
+
+  footer {
+    transform: scale(1);
+    padding: 0 0 .5em 0;
+  }
+}
+
+
+
+/* Large Screens */
+@media (min-width: 992px) {
+  
+  .contentText {
+    width: 80%;
+    padding: 1.2em 0 0 1.1em ;
+    font-size: 1.5em;
+    height: 70%;
+   overflow-y: hidden;
+  
+    box-sizing: content-box;  
+  }
+
+  .title{
+    position: fixed;
+    top: 0;
+    padding: .5em 0 0 2em;
+    font-size: 4em;
+
+
+  }
+
+  .content img {
+    
+    width: 10em;
+    height: 10em;
+  }
+
+ 
+
+  footer {
+    transform: scale(1);
+    padding: 0 0 .5em 0;
+  }
+
+  .navigation {
+    font-size: 1.9em;
+    width: 2em;
+    padding: 3.5em 5em 0 0;
+    /* border-left: .2em solid; */
+    
+    
+  }
+
+}
