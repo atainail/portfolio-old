@@ -7,6 +7,8 @@ Here is a short list of small, independent projects that I have completed.
   <p class="pt-2"><a href="https://atainail.github.io/sample_website_1/" target="_blank">Sample Website</a>
 
   <p class="pt-1"><a href="https://atainail.github.io/photo-site/index.html" target="_blank">Sample Photo Website</a>
+  
+  <p class="pt-1"><a href="https://atainail.github.io/crud_list/" target="_blank">Simple CRUD To-do list</a>
 
   <p class="pt-1"><a href="https://atainail.github.io/price_table/" target="_blank">Sample Pricing Table</a>
 
