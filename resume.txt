@@ -5,6 +5,8 @@ Here is a short list of small, independent projects that I have completed.
 <div class="portfolio-links">
 
   <p class="pt-2"><a href="https://atainail.github.io/sample_website_1/" target="_blank">Sample Website</a>
+  
+  <p class="pt-1"><a href="https://atainail.github.io/google_clone/" target="_blank">Google Clone</a>
 
   <p class="pt-1"><a href="https://atainail.github.io/photo-site/index.html" target="_blank">Sample Photo Website</a>
   
