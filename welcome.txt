@@ -1,6 +1,8 @@
-Hello there! My name is Atai Nail and I welcome you to my website!
-
-<p>
-        <p>You are embarking on a journey that could ally you with a one-of-a-kind computer scientist!
-        To keep things brief, I am an aspiring front end web designer! This website is a means to showcase my skills.
-        <p>Let's work together to bring YOUR ideas to life.
+<div class="pt-5 contentText container">
+  Hello there! My name is Atai Nail and I welcome you to my website!
+  
+  <p>You are embarking on a journey that could ally you with a one-of-a-kind computer scientist!
+  To keep things brief, I am an aspiring front end web designer! This website is a means to showcase my skills.
+  
+  <p>Let's work together to bring YOUR ideas to life.
+</div>

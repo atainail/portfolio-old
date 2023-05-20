@@ -130,4 +130,25 @@ function lights(){
     } 
 }
 
+let background = document.querySelector(".background");
+
+function drawCircles() {
+  for(let i = 1; i < 30; i++){ 
+    let randomX = Math.floor(Math.random() * window.innerWidth);
+    let randomY = Math.floor(Math.random() * window.innerHeight);
+    let randomSize = Math.floor(Math.random() * 100);
+    background.innerHTML += `<div style='font-size: ${randomSize}px; position:absolute; left: ${randomX}px; top: ${randomY}px;'>&#x25CF;</div>`;
+  }
+}
+
+drawCircles();
+
+
+
+
+
+
+
+
+
 

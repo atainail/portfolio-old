@@ -1,61 +1,49 @@
-html,
-body {
+html, body {
   height: 100%;
-  
   cursor: pointer;
-
-
-}
-
-body::-webkit-scrollbar {
-  display: none;
 }
 
 body {
   color: #235b58;
-  /* color: #1F2833; */
   font-family: 'Dekko';
   background-image: linear-gradient(to bottom right, #66FCF1 , #45A29E);
-  /* background-image: linear-gradient(to bottom right, rgb(227, 233, 255), #d7e5ff); */
-  -ms-overflow-style: none;  /* IE and Edge */
-  scrollbar-width: none;  /* Firefox */
-  
+  overflow: hidden;
 }
 
 .content {
   border: 10px outset #48ada6;
   border-radius: .1em; 
-  transition: .5s;
+  transition: .7s;
   height: 100%;
-  overflow: hidden;
 }
 
 .content:hover {
   border: 10px outset #88dcd6;
 }
 
+.contentText::-webkit-scrollbar {
+  display: none;
+}
+
 .contentText {
-  font-size: 1.1em;
-  padding: 1.1em 8em 0 0 ;
-  text-indent: 1.1em;
-  height: 38%;
+  font-size: 1.5em;
+  padding: 1.1em 0em 0 0 ;
+  height: 64%;
   overflow-y: scroll;
-  
-    box-sizing: content-box; 
-   
+  -ms-overflow-style: none;  /* IE and Edge */
+  scrollbar-width: none;  /* Firefox */
+
 }
 
 .contentText a{
   transition: .5s;
   padding-top: 1.5em;
   text-decoration: none;
-  
 }
 
 .contentText a:hover{
   letter-spacing: .2em;
   transform: translateY(-.25em);
-  
 }
 
 
@@ -70,15 +58,13 @@ body {
   font-size: 2.5em;
   font-weight: 900;
   padding: .6em 0 .4em 0;
-  text-transform: uppercase;
-   
+  text-transform: uppercase;  
 }
 
 
 
 .go-dark {
   color: #66FCF1;
-  /* color: white; */
   transition: .3s all;
   background-image: linear-gradient(to bottom right, #2f4258 20em, #0B0C10);
 }
@@ -116,18 +102,13 @@ body {
 .moon {
   width: 1.2em;
   height: 1.2em;
-  transition: 1s;
-  transition: .3s all;
+  transition: .5s;
 }
 
 .moon:hover {
-  transform: rotate(-10deg);
+  transform: translateY(-1.5px);
+  color: white;
 }
-
-.moon:hover svg {
-  /* fill: blue; */
-}
-
 
 .fill-height {
   min-height: 100%;
@@ -144,14 +125,6 @@ body {
   margin-right: auto;
   align-items: center;
   text-align: center;
-}
-
-.container img {
-  border-radius: 50%;
-  width: 12em;
-  height: 12em;
-  display: block;
-
 }
 
 
@@ -219,26 +192,8 @@ span:nth-child(8) {
 /* Adapted code end */
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 .navigation {
   font-size: 1.5em;
-  
-  
 }
 
 .navigation a {
@@ -261,7 +216,6 @@ span:nth-child(8) {
 .navigation a:hover {
   letter-spacing: .15em;
   text-decoration: none;
-  /* text-shadow: 0 0.04em .25em pink; */
   transform: translateY(-.25em);
 
 }
@@ -269,11 +223,6 @@ span:nth-child(8) {
 /* selected link */
 .navigation a:active {
   color: #1F2833;
-}
-
-footer {
-  padding: 0 0 .7em 0;
-
 }
 
 footer svg {
@@ -287,8 +236,6 @@ footer svg {
   color:#66FCF1;
 }
 
-
-/* mouse over link */
 footer svg:hover {
   text-decoration: none;
   transform: translateY(-.25em);
@@ -299,22 +246,14 @@ footer svg:hover {
 
 .go-dark svg:hover {
   text-decoration: none;
-  transform: translateY(-.25em);
-  color: #66FCF1;
-  filter: drop-shadow(2px 4px 2px rgba(255, 255, 255));
-  transition: all .3s ease-in-out;
+  color: white;
 }
-
-
-
-
 
 
 /* Start code adapted from https://www.30secondsofcode.org/css/s/hover-underline-animation edited by Atai Nail*/
 .hover-underline-animation {
   display: inline-block;
   position: relative;
-
 }
 
 .hover-underline-animation::after {
@@ -328,7 +267,6 @@ footer svg:hover {
   left: 25%;
   opacity: 70%;
   background-color: #89eff3;
-  /* background-image: linear-gradient(to bottom right, #6d8bc5, white); */
   transform-origin: bottom right;
   transition: transform 0.25s ease-out;
 }
@@ -340,22 +278,24 @@ footer svg:hover {
 
 /* End Code */
 
+.background {
+  position: absolute;
+  top: 0;
+  z-index: -1;
+  animation-name: circles;
+  animation-duration: 8s;
+  animation-iteration-count: infinite;
+  text-shadow: 2px 2px 2px white;
+}
 
-
-
-
-
+@keyframes circles {
+  0%   {opacity: 0%; transform: translate(20px, 30px);}
+  50%  {opacity: 10%;}
+  100% {opacity:  0%;}
+}
 
 /* Medium Screens */
 @media (min-width: 768px) {
- 
-
-  .content img {
-    width: 8em;
-    height: 8em;
-  }
-
-  
 
   .moon {
     transform: scale(1.5);
@@ -368,37 +308,19 @@ footer svg:hover {
   }
 }
 
-
-
 /* Large Screens */
 @media (min-width: 992px) {
-  
   .contentText {
     width: 80%;
-    padding: 1.2em 0 0 1.1em ;
+    padding: 5em 0 0 1.1em ;
     font-size: 1.5em;
     height: 70%;
-   overflow-y: hidden;
-  
     box-sizing: content-box;  
   }
 
-  .title{
-    position: fixed;
-    top: 0;
-    padding: .5em 0 0 2em;
+  .title{   
     font-size: 4em;
-
-
   }
-
-  .content img {
-    
-    width: 10em;
-    height: 10em;
-  }
-
- 
 
   footer {
     transform: scale(1);
@@ -409,9 +331,21 @@ footer svg:hover {
     font-size: 1.9em;
     width: 2em;
     padding: 3.5em 5em 0 0;
-    /* border-left: .2em solid; */
-    
-    
+  }
+
+  .hover-underline-animation::after {
+    content: '';
+    position: absolute;
+    width: 350%;
+    transform: scaleX(0);
+    height: .2em;
+    top: 1.05em;
+    bottom: 0;
+    left: 25%;
+    opacity: 70%;
+    background-color: #89eff3;
+    transform-origin: bottom right;
+    transition: transform 0.25s ease-out;
   }
 
 }
