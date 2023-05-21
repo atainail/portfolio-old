@@ -26,7 +26,7 @@ body {
 }
 
 .contentText {
-  font-size: 18px;
+  font-size: 25px;
   padding: 1.1em 0em 0 0 ;
   height: 80%;
   overflow-y: scroll;
@@ -37,7 +37,7 @@ body {
 
 .effect { 
   position: absolute;
-  opacity: 50%;
+  opacity: 60%;
   background-color: #ffffff;
   width: 95%;
   height: 10%;
@@ -50,7 +50,7 @@ body {
 
 @keyframes effect {
   0%   {width:10px; height: 10px; opacity: 0; transform: translate(-20px, -10px);}
-  100% {width: 95%; height: 10%; opacity: 50%; transform: translate(20px, 10px);}
+  100% {width: 95%; height: 10%; opacity: 60%; transform: translate(20px, 10px);}
 }
 
 .contentText a{
@@ -86,11 +86,11 @@ body {
 }
 
 .go-dark .effect {
-  background-color: #13403e;
+  background-color: #051a19;
 }
 
 .go-dark .contentText{
-  color: #C5C6C7;
+  color: #66FCF1;
 }
 
 .go-dark a {
