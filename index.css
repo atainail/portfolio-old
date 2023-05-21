@@ -85,6 +85,10 @@ body {
   background-image: linear-gradient(to bottom right, #2f4258 20em, #0B0C10);
 }
 
+.go-dark .effect {
+  background-color: #13403e;
+}
+
 .go-dark .contentText{
   color: #C5C6C7;
 }
