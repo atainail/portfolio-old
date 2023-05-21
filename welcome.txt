@@ -1,4 +1,4 @@
-<div class="pt-5 contentText container">
+
   <p>
     Hello there! My name is Atai Nail and I welcome you to my website!
   </p>
@@ -13,4 +13,3 @@
     <div class="effect"></div>
     Let's work together to bring YOUR ideas to life.         
   </p>
-</div>

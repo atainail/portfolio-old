@@ -1,4 +1,4 @@
-<div class="pt-5 contentText container">
+
 
     So, you would like to know me on a bit more personal level? Well thank you for that!
 
@@ -16,5 +16,3 @@
     With those tools, I was able to craft this website into the creation it is today.
 
     <p>I strive to create websites that are efficient, clean and up to industry standards.
-
-</div>
