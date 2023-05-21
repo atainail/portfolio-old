@@ -26,19 +26,38 @@ body {
 }
 
 .contentText {
-  font-size: 1.5em;
+  font-size: 25px;
   padding: 1.1em 0em 0 0 ;
-  height: 64%;
+  height: 80%;
   overflow-y: scroll;
   -ms-overflow-style: none;  /* IE and Edge */
   scrollbar-width: none;  /* Firefox */
+  position: relative;
+}
 
+.effect { 
+  position: absolute;
+  opacity: 50%;
+  background-color: #ffffff;
+  width: 95%;
+  height: 10%;
+  animation-name: effect;
+  animation-duration: 2s;
+  z-index: -1;
+  border-radius: 5px;
+  transform: translate(20px, 10px);
+}
+
+@keyframes effect {
+  0%   {width:10px; height: 10px; opacity: 0; transform: translate(-20px, -10px);}
+  100% {width: 95%; height: 10%; opacity: 50%; transform: translate(20px, 10px);}
 }
 
 .contentText a{
   transition: .5s;
   padding-top: 1.5em;
   text-decoration: none;
+  color: #1F2833;
 }
 
 .contentText a:hover{
@@ -46,9 +65,8 @@ body {
   transform: translateY(-.25em);
 }
 
-
 .portfolio-links {
-  padding: 2em 0 0 0; 
+  padding: 2em 0 0 0;
 }
 
 .title {
@@ -60,8 +78,6 @@ body {
   padding: .6em 0 .4em 0;
   text-transform: uppercase;  
 }
-
-
 
 .go-dark {
   color: #66FCF1;
@@ -217,7 +233,6 @@ span:nth-child(8) {
   letter-spacing: .15em;
   text-decoration: none;
   transform: translateY(-.25em);
-
 }
 
 /* selected link */
@@ -298,7 +313,6 @@ footer svg:hover {
 @media (min-width: 768px) {
 
   .moon {
-    transform: scale(1.5);
     padding: 0 .7em 0 0;
   }
 

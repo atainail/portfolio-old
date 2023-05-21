@@ -2,7 +2,7 @@
 $(document).ready(function(){
   $(".home").click(function(){
     $(".contentText").load("welcome.txt").hide().fadeIn('slow');
-    document.querySelector('.title').innerHTML = '<div class="letters">'
+    document.querySelector('.title').innerHTML = '<div class="letters pt-5">'
     + '<span>W</span>'
     + '<span>e</span>'
     + '<span>l</span>'
@@ -18,7 +18,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".resume").click(function(){
     $(".contentText").load("resume.txt").hide().fadeIn('slow');
-    document.querySelector('.title').innerHTML = '<div class="letters">'
+    document.querySelector('.title').innerHTML = '<div class="letters pt-5">'
     + '<span>P</span>'
     + '<span>r</span>'
     + '<span>o</span>'
@@ -34,7 +34,7 @@ $(document).ready(function(){
 $(document).ready(function(){
   $(".me").click(function(){
     $(".contentText").load("me.txt").hide().fadeIn('slow');
-    document.querySelector('.title').innerHTML = '<div class="letters">'
+    document.querySelector('.title').innerHTML = '<div class="letters pt-5">'
     + '<span>A</span>'
     + '<span>b</span>'
     + '<span>o</span>'
@@ -51,7 +51,7 @@ $(document).ready(function(){
 function socialOops(socialName){
   document.querySelector('.contentText').innerHTML = 
   "<center> Once I make a " + socialName + " I will put it here!</center>";
-  document.querySelector('.title').innerHTML = '<div class="letters">'
+  document.querySelector('.title').innerHTML = '<div class="letters pt-5">'
     + '<span>O</span>'
     + '<span>o</span>'
     + '<span>p</span>'

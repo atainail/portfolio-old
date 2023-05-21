@@ -4,17 +4,33 @@
 
   <div class="portfolio-links">
 
-    <p class="pt-2"><a href="https://atainail.github.io/sample_website_1/" target="_blank">Sample Website</a>
+    <p class="pt-2">
+      <div class="effect"></div>
+      <a href="https://atainail.github.io/sample_website_1/" target="_blank">Sample Website</a>
+    </p>
     
-    <p class="pt-1"><a href="https://atainail.github.io/google_clone/" target="_blank">Google Clone</a>
+    <p class="pt-1">
+      <a href="https://atainail.github.io/google_clone/" target="_blank">Google Clone</a>
+    </p>
 
-    <p class="pt-1"><a href="https://atainail.github.io/photo-site/index.html" target="_blank">Sample Photo Website</a>
+    <p class="pt-1">
+      <div class="effect"></div>
+      <a href="https://atainail.github.io/photo-site/index.html" target="_blank">Sample Photo Website</a>
+    </p>
     
-    <p class="pt-1"><a href="https://atainail.github.io/crud_list/" target="_blank">Simple CRUD To-do list</a>
+    <p class="pt-1">
+      <a href="https://atainail.github.io/crud_list/" target="_blank">Simple CRUD To-do list</a>
+    </p>
 
-    <p class="pt-1"><a href="https://atainail.github.io/price_table/" target="_blank">Sample Pricing Table</a>
+    <p class="pt-1">
+      <div class="effect"></div>
+      <a href="https://atainail.github.io/price_table/" target="_blank">Sample Pricing Table</a>
+    </p>
 
-    <p class="pt-1"><a href="https://atainail.github.io/asrasAdventure/" target="_blank">Small game using only Javascript, HTML, CSS</a>
+    <p class="pt-1">
+      <div class="effect"></div>
+      <a href="https://atainail.github.io/asrasAdventure/" target="_blank">Small game using only Javascript, HTML, CSS</a>
+    </p>
 
   </div>
 </div>
