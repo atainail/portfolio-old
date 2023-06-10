@@ -21,6 +21,11 @@
     <p class="pt-1">
       <a href="https://atainail.github.io/crud_list/" target="_blank">Simple CRUD To-do list</a>
     </p>
+    
+    <p class="pt-1">
+      <div class="effect"></div>
+      <a href="https://atainail.github.io/chatbot_UI/" target="_blank">Chatbot UI (non-functioning)</a>
+    </p>
 
     <p class="pt-1">
       <div class="effect"></div>
