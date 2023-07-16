@@ -1,15 +1,15 @@
 
   <p>
-    Hello there! My name is Atai Nail and I welcome you to my website!
+    Hello! My name is Atai Nail. Welcome to my website!
   </p>
   <p>
     <div class="effect"></div>
-    You are embarking on a journey that could ally you with a one-of-a-kind computer scientist!
+    To keep things brief, I am a junior front end web designer with some backend experience! This website is a means to showcase my skills.
   </p>
   <p>
-    To keep things brief, I am an aspiring front end web designer! This website is a means to showcase my skills.
+    Along with the basics of HTML, JavaScript, and CSS, I am proficient in React, Python, Java and have even dabbled in C and C++.   
   </p>
   <p>
     <div class="effect"></div>
-    Let's work together to bring YOUR ideas to life.         
+    If you have any questions, please feel free to contact me by sending me an email at atainail@yahoo.com with a subject line of "Attn: Portfolio". I look forward to working with you!       
   </p>
