@@ -7,7 +7,7 @@
     To keep things brief, I am a junior front end web designer with some backend experience! This website is a means to showcase my skills.
   </p>
   <p>
-    Along with the basics of HTML, JavaScript, and CSS, I am proficient in React, Python, Java and have even dabbled in C and C++.   
+    Along with HTML, JavaScript, and CSS, I am proficient in React, Python, Java and have even dabbled in C and C++.   
   </p>
   <p>
     <div class="effect"></div>
