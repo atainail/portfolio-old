@@ -1,0 +1,358 @@
+@font-face
+{
+    font-family: 'toon';
+    src: url('fonts/TooneyNoodleNF.otf');
+    /* font from https://www.1001fonts.com/cartoon-fonts.html?page=1 */
+}
+
+html, body{
+    margin: 0;
+    padding: 0;
+    
+    
+}
+
+body {
+    width: 90vw;
+    height: 100%;
+    /* background-color:#FEC8D8; */
+    background-color: salmon;
+    /* https://www.schemecolor.com/pastel-color-tones.php#google_vignette */
+    overflow: hidden;
+
+
+    
+}
+
+.navigation {
+    position: absolute;
+    top: 0;
+    left: 0;
+    margin: 0;
+    display: block;
+    /* background-color: #E0BBE4; */
+    background-color: lightblue;
+    width: 100%;
+    height: 15vh;
+    min-height: 100px;
+    border-bottom: .5em solid black;
+    text-align: center;
+    padding: .5em;
+}
+
+.group {
+  position: relative;
+  /* padding: 5px 0 0 0; */
+  /* height: 100%; */
+  /* background-color: red; */
+}
+
+a {
+    color: black;
+    text-decoration: none;
+    transition: .7s ;
+    /* background: transparent; */
+    /* background-size: 200%; */
+    /* background-position: left; */
+    padding: .1em .3em;
+}
+
+a:hover {
+  /* background: linear-gradient(to left, salmon 50%, lightblue 50%) right; */
+  box-shadow: inset 300px 0 0 0 rgb(255, 210, 205);
+  border-radius: 10px;
+  /* padding: .1em .3em; */
+  /* opacity: 80%; */
+}
+
+.nav-link {
+    /* margin: auto;
+    flex: auto; */
+    text-align: center;
+    font-family: 'toon';
+    font-size: 1.8em;
+    text-shadow: 2px 2px white;
+    /* position: relative; */
+    /* z-index: 1; */
+}
+
+.home, .projects, .me, .letters{
+    position: relative;
+    
+}
+
+.nav-link {
+/* border-right: #ffffff solid;     */
+}
+
+
+
+.home:hover span, .projects:hover span, .me:hover span{
+    position: relative;
+    /* animation: letter-jump .2s linear alternate ; */
+}
+
+.pic {
+  display: none;
+}
+
+
+.topLeftText, .middleText {
+  position: relative;
+  height: 100%;
+  overflow: auto;
+  padding-left: 7px;
+  font-size: 1.2em;
+  /* background-color: azure; */
+  scrollbar-width: thin;
+  scrollbar-color: lightblue transparent;
+
+  
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 5px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  box-shadow: inset 0 0 5px grey; 
+  border-radius: 10px;
+}
+ 
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: lightblue; 
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: rgb(37, 57, 64); 
+}
+
+/* Adapted From https://codepen.io/Nyamyami/pen/WLmmNJ */
+@keyframes letter-jump{
+    100%{
+      top: -8px;
+    }
+  }
+  .nav-link span:nth-child(2){
+    animation-delay:0.1s;
+  }
+  .nav-link span:nth-child(3){
+    animation-delay:0.2s;
+  }
+  .nav-link span:nth-child(4){
+    animation-delay:0.3s;
+  }
+  .nav-link span:nth-child(5){
+    animation-delay:0.4s;
+  }
+  .nav-link span:nth-child(6){
+    animation-delay:0.5s;
+  }
+  .nav-link span:nth-child(7){
+    animation-delay:0.6s;
+  }
+  .nav-link span:nth-child(8){
+    animation-delay:0.7s;
+  }
+
+  .content {
+    /* position: absolute; */
+    z-index: -1;
+  }
+
+  .top-left { 
+    /* display: inline-block; */
+    position: relative;
+    top: 19vh;
+    
+    width: 40vw;
+    min-height: 120px;
+    height: 20vh;
+    /* background-color: #957DAD; */
+    background-color: lightblue;
+    border-radius: 0 10px 10px 10px;
+    border: solid .3em black;
+    color: white;
+    /* text-stroke: black; */
+    left: -100px;
+    animation: slide-in-top-left 1s forwards;
+    /* animation-delay: 2s; */
+    font-size: 1.9em;
+    font-weight:bolder ;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+    
+  }
+
+  @keyframes slide-in-top-left{
+    0% {
+      opacity: 0;
+    }
+    100%{
+      left: 5vw;
+      opacity: 100%;
+    }
+  }
+
+  .middle {
+    /* display: block; */
+    position: relative;
+    top: 15vh;
+    left: -10px;
+    width: 65vw;
+    height: 42vh;
+    /* min-height: 400px; */
+    /* background-color: #957DAD; */
+    background-color: rgb(85, 140, 158);
+    border-radius: 0 10px 10px 10px;
+    border: solid .5em black;
+    color: white;
+    font-size: 1.2em;
+    opacity: 0;
+    /* left: -100px; */
+    animation: slide-in-middle 1s forwards;
+    animation-delay: .5s;
+    z-index: 2;
+  }
+
+  @keyframes slide-in-middle{
+    0% {
+      opacity: 0;
+    }
+    100%{
+      left: 27vw;
+      opacity: 100%;
+    }
+  }
+
+
+  .credits {
+    position: absolute;
+    bottom: -300px;
+    right: -100px;
+    padding-top: .5em;
+    padding-bottom: 1.2em;
+    background-color: rgb(213, 244, 255);
+    animation: slide-in-credits 1s forwards;
+    animation-delay: 1s;
+    width: 100%;
+    height: 10vh;
+    border: .3em solid black;
+    border-bottom: none;
+    border-right: none;
+    text-align: center;
+    font-size: 1.1em;
+    opacity: 0;
+  }
+
+  @keyframes slide-in-credits{
+    100%{
+      bottom: 0;
+      right: 0;
+      opacity: 100%;
+    }
+  }
+
+  .background {
+    display: none;
+  }
+
+
+  @media (min-width: 768px) { 
+
+    .navigation {
+      display: flex;
+      height: 8vh;
+      width: 80%;
+      border-right: .5em solid black;
+      max-width: 800px;
+      /* margin: auto; */
+      /* width: 100vw; */
+      
+      
+  }
+
+  .group {
+    /* margin-top: auto;
+    margin-bottom: auto; */
+    margin: auto;
+    flex: auto;
+    /* background-color: red; */
+    /* position: relative; */
+  }
+
+   .content {
+    /* position: relative; */
+    /* margin-top: 2%; */
+
+  }
+
+  .top-left { 
+    
+    /* top: 12vh; */
+    max-width: 500px;
+  }
+
+  .middle {
+    top: 10vh;
+    max-width: 700px;
+    
+  }
+
+  .credits {
+    position: absolute;
+    bottom: -100px;
+    right: -70px;
+    padding: 1.3em;
+    background-color: rgb(213, 244, 255);
+    animation: slide-in-credits 1s forwards;
+    animation-delay: 1s;
+    width: 80%;
+    border: .5em solid black;
+    border-bottom: none;
+    border-right: none;
+    text-align: right;
+    max-width: 800px;
+  }
+ 
+
+   }  
+
+
+   @media (min-width: 1250px) {
+
+    .background{
+      display: block;
+      position: absolute;
+      top: 5%;
+      right: 0%;
+      z-index: -2;
+      opacity: 0%;
+      width: 100vw;
+      height: 100vh;
+      font-size: 1.5em;
+
+      animation: 1.5s fadeIn;
+      animation-fill-mode: forwards;
+      animation-delay: 4s;
+      
+
+    }
+
+    @keyframes fadeIn {
+      0% {
+        opacity: 0;
+      }
+      100% {
+        opacity: 50%;
+      }
+    }
+   }
+  
